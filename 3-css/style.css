@@ -1,7 +1,7 @@
+/*selettori di tipi*/
 body{
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 h1{
@@ -9,9 +9,49 @@ h1{
     font-size: 2.5em;
 }
 
+/*selettore universale multi elemento*/
 p, li{
     color:rgb(0, 0, 126);
     font-size: 1.2em;
+}
+
+/*selettore di classe*/
+.special {
+    color:rgb(92, 15, 15);
+}
+
+
+em.highlight {
+  background-color: yellow;
+}
+
+.special.highlight{
+    color: rgb(235, 151, 168);
+    background-color: rebeccapurple;
 
 }
 
+/*selettore discendente*/
+nav ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/*prossimo fratello*/
+h1+p{
+    color:darkgreen;
+    text-transform: uppercase;
+}
+
+/*selettore di attributo*/
+a[title] {
+    color: hotpink;
+}
+
+a:hover {
+  color: hotpink;
+}
