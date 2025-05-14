@@ -5,7 +5,7 @@ body{
 }
 
 h1{
-    color:red;
+    color:darkcyan;
     font-size: 2.5em;
 }
 
@@ -53,5 +53,55 @@ a[title] {
 }
 
 a:hover {
-  color: hotpink;
+  color: rgb(231, 151, 191);
+}
+
+.box{
+    background-color: rgb(127, 170, 249);
+    border: 1px solid black;
+    width: 50%;
+    padding: 30px;
+    margin: 50px;
+}
+
+section {
+    background-color: rgb(22, 158, 158);
+    border: 1px solid black;
+}
+
+section > div{
+    background-color: rgb(185, 231, 231);
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section + p>span{
+    background-color: rgb(185, 231, 231);
+    border: 1px solid black;
+    height: 100px; /*l'altezza non ha effetto non essendp una box*/
+}
+
+nav >ul>li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgb(153, 193, 193);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+
+nav>ul>li:hover{
+    background-color: rgb(10, 62, 62);
+
+}
+
+nav>ul>li:hover>a {
+    color: azure;
 }
